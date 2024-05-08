@@ -228,3 +228,17 @@
    */
   new PureCounter();
 })();
+
+// HERO PLAY BUTTON
+const heroVideo = document.getElementById("heroVideo");
+const HeroPlay = document.getElementById("HeroPlay");
+
+function play() {
+  if (heroVideo.paused) {
+    heroVideo.play();
+    HeroPlay.style.background = "url(/assets/img/svgPlay.png)";
+  } else {
+    heroVideo.pause();
+    HeroPlay.style.background = "url(/assets/img/svgPause.png)";
+  }
+}

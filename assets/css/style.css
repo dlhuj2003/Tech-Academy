@@ -392,13 +392,9 @@ a {
   border-radius: var(--radius);
   height: 22rem;
   box-shadow: var(--shadow-darker);
+  overflow: hidden;
 }
-.outer-container img {
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-.iconPlay {
+/* .iconPlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -426,6 +422,10 @@ a {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+} */
+.outer-container video {
+  height: 100%;
+  width: 100%;
 }
 
 /* COURSES  */
@@ -813,7 +813,7 @@ a {
 .mainContainerWidth {
   width: 80%;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 13px;
 }
 .newsItem {
