@@ -1,0 +1,124 @@
+/* Disable AOS delay on mobile */
+@media screen and (max-width: 768px) {
+  .Courses .card-body {
+    background: var(--pale-blue-lighter);
+  }
+}
+
+@media screen and (width <=500px) {
+  .sectionHeader h2::before {
+    display: none;
+  }
+  .InnerContainer {
+    padding: 0 20px;
+    height: 90vh;
+  }
+  .outer-container {
+    transform: translateX(-50%) scale(0.8);
+    width: 100%;
+    top: -110px;
+  }
+  .text-container {
+    text-align: start;
+  }
+  .text-container h1 {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .text-container p {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (width >991px) {
+  .navbar .dropdown ul li a i {
+    display: none;
+  }
+}
+@media screen and (width <992px) {
+  main {
+    margin-top: 82px;
+  }
+  .navbar .dropdown ul .dropdown ul {
+  }
+  .navbar li:hover .bi-chevron-down {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  .NewsImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+@media screen and (width <=1080px) {
+  .outer-container {
+    width: 60%;
+    height: 18rem;
+  }
+  .text-container h1 {
+    width: 80%;
+  }
+  .Courses .card .img {
+    height: 12rem;
+  }
+}
+@media screen and (width <=750px) {
+  .outer-container {
+    width: 90%;
+  }
+}
+@media screen and (width <=800px) {
+  .text-container h1 {
+    font-size: var(---h2);
+    width: 100%;
+  }
+  .text-container p {
+    font-size: var(--h6);
+    width: 90%;
+  }
+}
+@media screen and (width >=11690px) {
+  footer {
+    padding: 50px 5% 40px;
+  }
+}
+@media screen and (width >=1120px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, auto));
+    gap: 2rem;
+  }
+}
+
+@media screen and (width <=1000px) {
+  .footer {
+    padding: 80px 5% 70px;
+  }
+}
+
+@media screen and (width >=700px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (width <=400px) {
+  .footerContent h4 {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media screen and (width < 1200px) {
+  .mainContainerWidth {
+    width: 100%;
+  }
+}

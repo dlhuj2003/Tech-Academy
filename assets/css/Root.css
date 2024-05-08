@@ -1,0 +1,141 @@
+/* poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* League Spartan font */
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+
+/* SCROLL TO TOP BUTTON */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--light-blue);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: var(--white-natural);
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: var(--secondary-color);
+  color: var(--white-natural);
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* SECTION STYLES  */
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.sectionHeader {
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+}
+.sectionHeader h2 {
+  font-family: var(--font-secondary);
+  position: relative;
+  color: var(--pale-blue);
+  font-weight: var(--weight-bold);
+  line-height: var(---h3-lineHeight);
+  text-transform: uppercase;
+}
+.sectionHeader p{
+  color: var(--sub-text);
+  font-size: var(--h3);
+}
+.section p {
+  margin: 15px 0 0 0;
+}
+.sectionHeader h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: var(--light-blue);
+  display: inline-block;
+  margin: 0 0 10px 15px;
+  
+}
+
+:root {
+  /* LIGHT MODE */
+  /* ****  text   ***** */
+  --primary-text: var(--white-natural);
+  --secondary-text: #515151;
+  --sub-text: #767676;
+
+  /* ****  All colors   ***** */
+  --main-bg-color: #f5f5f5;
+  --white-natural: #fff;
+  --white-tint: #f2f5f7;
+  --pale-blue: #1a2338;
+  --pale-blue-lighter: #202e4f;
+  --light-blue: #27b8a7;
+  /* --light-blue: rgb(92, 197, 185); */
+  --lighter-green: rgb(4, 255, 135);
+  --primary-color: #cae3f7;
+  --secondary-color: #f7941d;
+
+  /* ****  font-family   ***** */
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "League Spartan", sans-serif;
+
+  /* ****  font -size  ***** */
+  ---h1: 50px;
+  ---h2: 36px;
+  ---h3: 28px;
+  ---h4: 20px;
+  ---h5: 18px;
+  ---h6: 16px;
+  /* ****  font -weight  ***** */
+  ---weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+  --weight-extra-bold: 800;
+  --weight-black: 900;
+
+  /* **** line-height  **** */
+  --h1-lineHeight: 1.2;
+  ---h2-lineHeight: 1.39;
+  ---h3-lineHeight: 1.43;
+  ---h4-lineHeight: 1.4;
+  ---h5-lineHeight: 1.45;
+  ---h6-lineHeight: 1.62;
+
+  /* **** Transition  **** */
+  ---transition: 0.3s;
+  ---transition-2: 0.5s;
+
+  /* **** Box shadow  ****/
+  --shadow-darker: 0px 10px 50px 0px rgba(26, 46, 85, 0.1);
+  --shadow-darker2: 0px 20px 50px 0px rgba(26, 46, 85, 0.1);
+  --shadow-dark: 0px 10px 30px 0px rgba(20, 36, 66, 0.15);
+  --shadow-darkest: 0px 10px 30px 0px rgba(0, 0, 0, 0.05);
+  --shadow-darker3: 0px 4px 50px 0px rgba(0, 0, 0, 0.1);
+  --shadow-darker4: 0px 20px 70px 0px rgba(15, 107, 92, 0.2);
+  --shadow-Default: 0px 0px 30px rgba(127, 137, 161, 0.25);
+
+  /* **** Border radiusw****/
+  --radius-small: 5px;
+  --radius: 10px;
+  --radius-big: 16px;
+}
