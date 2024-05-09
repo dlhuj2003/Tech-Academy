@@ -53,7 +53,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+  }
+  button#submit-button {
+    width: 80%;
   }
 }
 @media screen and (width <=1080px) {
@@ -114,7 +116,6 @@
   .footerContent h4 {
     margin-bottom: 1.5rem;
   }
-
 }
 
 @media screen and (width < 1200px) {

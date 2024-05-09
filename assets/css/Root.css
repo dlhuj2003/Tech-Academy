@@ -57,7 +57,7 @@
   line-height: var(---h3-lineHeight);
   text-transform: uppercase;
 }
-.sectionHeader p{
+.sectionHeader p {
   color: var(--sub-text);
   font-size: var(--h3);
 }
@@ -71,7 +71,6 @@
   background: var(--light-blue);
   display: inline-block;
   margin: 0 0 10px 15px;
-  
 }
 
 :root {
