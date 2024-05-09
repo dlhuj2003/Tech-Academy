@@ -40,8 +40,6 @@
   main {
     margin-top: 82px;
   }
-  .navbar .dropdown ul .dropdown ul {
-  }
   .navbar li:hover .bi-chevron-down {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
