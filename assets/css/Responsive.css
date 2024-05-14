@@ -1,15 +1,35 @@
 /* Disable AOS delay on mobile */
 @media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .Courses .card-body {
     background: var(--pale-blue-lighter);
   }
 }
 
+@media screen and (width <=600px) {
+  .coverAll {
+    padding: 10px;
+  }
+  .abBox {
+    padding: 15px 10px;
+  }
+  .aboutHero .whoWeAreBox {
+    width: 100%;
+  }
+  .aboutHero .empoweringKnowledgeBox {
+    width: 100%;
+  }
+}
 @media screen and (width <=500px) {
   .sectionHeader h2::before {
     display: none;
   }
-  .InnerContainer {
+  /* .InnerContainer {
     padding: 0 20px;
     height: 90vh;
   }
@@ -17,7 +37,7 @@
     transform: translateX(-50%) scale(0.8);
     width: 100%;
     top: -110px;
-  }
+  } */
   .text-container {
     text-align: start;
   }
@@ -28,6 +48,16 @@
   .text-container p {
     width: 100%;
     margin: 0;
+  }
+
+  #aboutIntro {
+    padding-top: 18px;
+    align-items: start;
+    justify-content: start;
+    height: initial;
+  }
+  #aboutVideo .video {
+    width: 100%;
   }
 }
 
@@ -55,11 +85,41 @@
   button#submit-button {
     width: 80%;
   }
+
+  #aboutVideo .video {
+    width: 80%;
+  }
+  .InnerContainer {
+    height: 85vh;
+  }
+  .outer-container {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: transparent;
+    padding: 30px auto;
+    height: initial;
+  }
+  .outerInner {
+    top: 0;
+    padding: 30px auto;
+    background-color: transparent;
+  }
+  .leftAngle,
+  .rightAngle {
+    display: none;
+  }
+  .text-container h1 {
+    color: var(--primary-text);
+  }
+  .text-container p {
+    color: var(--primary-text);
+  }
 }
 @media screen and (width <=1080px) {
   .outer-container {
-    width: 60%;
-    height: 18rem;
+    width: 100%;
+    /* height: 18rem; */
   }
   .text-container h1 {
     width: 80%;
@@ -67,13 +127,17 @@
   .Courses .card .img {
     height: 12rem;
   }
-}
-@media screen and (width <=750px) {
-  .outer-container {
-    width: 90%;
+
+  .coverAll {
+    padding: 10px 0;
   }
 }
-@media screen and (width <=800px) {
+@media screen and (width <=750px) {
+  /* .outer-container {
+    width: 100%;
+  } */
+}
+@media screen and (width <=850px) {
   .text-container h1 {
     font-size: var(---h2);
     width: 100%;
@@ -81,6 +145,19 @@
   .text-container p {
     font-size: var(--h6);
     width: 90%;
+  }
+  .aboutHero {
+    gap: 20px;
+  }
+  .abBox {
+    border-radius: 15px;
+  }
+  .aboutHero .whoWeAreBox {
+    width: 85%;
+  }
+  .aboutHero .empoweringKnowledgeBox {
+    top: 0;
+    width: 85%;
   }
 }
 @media screen and (width >=11690px) {
@@ -113,6 +190,12 @@
 @media screen and (width <=400px) {
   .footerContent h4 {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (width <=390px) {
+  .InnerContainer {
+    height: 80vh;
   }
 }
 

@@ -72,6 +72,9 @@
   display: inline-block;
   margin: 0 0 10px 15px;
 }
+.sectionHeader h2 span{
+  color: var(--secondary-color);
+}
 
 :root {
   /* LIGHT MODE */
